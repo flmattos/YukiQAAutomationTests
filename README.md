@@ -11,8 +11,11 @@ in the future in terms of features (more complexity on the pages), bring integra
 
 ## Project Structure
 yuki-qa-automation-tests/
+```bash
 │── Features/
 │ ├── Home.feature
+│ ├── Invoices.feature
+│ └── Privacy.feature
 │
 │── Steps/
 │ ├── HomeSteps.cs
@@ -21,21 +24,20 @@ yuki-qa-automation-tests/
 │
 │── Pages/
 │ ├── HomePage.cs
-│ └── InvoicesPage.cs
+│ ├── InvoicesPage.cs
 │ └── PrivacyPage.cs
 │
-│── Support/
-│ └── Hooks.cs
+│── Support/ 
+│ ├── Hooks.cs 
 │ └── World.cs
-yuki-qa-automation-tests/
-│── PlaywrightTraces/
-
-
+│
+│── PlaywrightTraces/ # Playwright trace reports (generated at runtime)
+```
 ## 🚀 How to Run
 
 1. Install dependencies:
    ```sh
-   dotnet restore
+   dotnet build
    ```
 
 2. Open a new terminal and up yuki-qa-automation/yuki-qa-automation-frontend
